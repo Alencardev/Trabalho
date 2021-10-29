@@ -7,17 +7,16 @@ package projetointegrador.jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.sql.PreparedStatement;
 /**
  *
  * @author acer
  */
 public class ConnectionFactory {
     public static Connection getConnection(){
-       final String url = "jdbc:mysql://localhost:3306/NEXTLEVELBD?verifyServerCertificate=false&useSSL=true";
+       final String url = "jdbc:mysql://localhost:3306/nextlevel?verifyServerCertificate=false&useSSL=true";
        final String user = "Alencardev";
-       final String password = "1995";
+       final String password = "2021";
        
         try {
             return DriverManager.getConnection(url, user, password);
